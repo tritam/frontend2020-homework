@@ -3,3 +3,35 @@ body {
   font-size: 1.1em;
   color: #555;
 }
+
+img {
+  margin-right: 5%;
+}
+
+img#grayscale {
+  filter: grayscale();
+}
+
+img#blur {
+  filter: blur(2px);
+}
+
+img#invert {
+  filter: invert();
+}
+
+img#brightness {
+  filter: brightness(50%);
+}
+
+img#saturation {
+  filter: saturate(150%);
+}
+
+img#sepia {
+  filter: sepia();
+}
+
+img#various-filters {
+  filter: grayscale() blur(2px);
+}

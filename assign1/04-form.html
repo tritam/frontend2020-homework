@@ -11,5 +11,33 @@
     <!-- Exercise #4 - Create a form -->
     <!-- Add your code below -->
     <!-- Do not use Bootstrap on this exercise  -->
+    <div>
+      <h1 id="title">INTRO SURVEY</h1>
+      <form action="/submit" method="post">
+        <fieldset>
+          <label for="name">Name</label><br/>
+          <input name="name" /><br/>
+          <label for="email">Email</label><br/>
+          <input name="email" type="email" /><br/>
+
+          <label for="register">Registration Status:</label><br/>
+          <select name="register" id="register-select">
+            <option value="registered">Registered</option>
+            <option value="waitlist">Waitlist</option>
+            <option value="other">Other</option>
+          </select><br/>
+
+          <label for="section">Class Section:</label><br/>
+          <input id="section" type="" /><br/>
+          <label for="q1">Have you taken any of the following courses?</label><br/>
+          <input id="q1" /><br/>
+          <label for="q2">Anything else?</label><br/>
+          <input id="q2" />
+          <br/><br/>
+          <input type="button" name="submit" value="Submit"/>
+          <input type="button" name="reset" value="Reset"/>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
