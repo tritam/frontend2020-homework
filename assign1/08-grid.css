@@ -12,3 +12,7 @@
 }
 
 /* Add your code here */
+.grid-container {
+  display: flex;
+}
+

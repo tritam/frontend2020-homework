@@ -15,27 +15,32 @@
       <h1 id="title">INTRO SURVEY</h1>
       <form action="/submit" method="post">
         <fieldset>
-          <label for="name">Name</label><br/>
-          <input name="name" /><br/>
-          <label for="email">Email</label><br/>
-          <input name="email" type="email" /><br/>
+          <label for="name">Name <span style="color: gray">(required)</span></label><br/>
+          <input id="name" name="name" required/><br/><br/>
+          <label for="email">Email <span style="color: gray">(required)</span></label><br/>
+          <input id="email" name="email" type="email" required/><br/><br/>
 
           <label for="register">Registration Status:</label><br/>
           <select name="register" id="register-select">
             <option value="registered">Registered</option>
             <option value="waitlist">Waitlist</option>
             <option value="other">Other</option>
-          </select><br/>
+          </select><br/><br/>
 
           <label for="section">Class Section:</label><br/>
-          <input id="section" type="" /><br/>
+          <input id="section" name="section" type="radio" /> CS 410P
+          <input id="section" name="section" type="radio" /> CS 510 <br/><br/>
+
           <label for="q1">Have you taken any of the following courses?</label><br/>
-          <input id="q1" /><br/>
+          <input name="q1" type="checkbox" /> Programming Languages<br/>
+          <input name="q1" type="checkbox" /> Operating Systems<br/>
+          <input name="q1" type="checkbox" /> Full Stack Web Development<br/><br/>
+
           <label for="q2">Anything else?</label><br/>
-          <input id="q2" />
+          <textarea id="q2" name="q2" rows="10" cols="70"></textarea>
           <br/><br/>
-          <input type="button" name="submit" value="Submit"/>
-          <input type="button" name="reset" value="Reset"/>
+          <input type="submit" id="submit" name="submit" value="Submit"/>
+          <input type="reset" id="reset" name="reset" value="Reset"/><br/><br/>
         </fieldset>
       </form>
     </div>
