@@ -16,3 +16,36 @@
 - darkgreen */
 
 /* Add your code here */
+#row1 {
+  background-color: purple;
+}
+
+#row2 {
+  background-color: navy;
+}
+
+#row2.col-sm {
+  max-width: 150%;
+}
+
+#row3 {
+  background-color: teal;
+}
+
+#row4 {
+  background-color: darkgreen;
+}
+
+@media (max-width: 575px) { 
+  #row4.col-4 {
+    max-width: 25%;
+  }
+
+  #row2.col {
+    min-width: 50%;
+  }
+
+  #row2.col-sm {
+    max-width: 50%;
+  }
+}
