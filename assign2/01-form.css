@@ -1,1 +1,70 @@
 /* Add your previous css styles for the form here  */
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0173a0;
+  }
+  
+  div {
+    background-color: white;
+    max-width: 40%;
+    margin: auto;
+  }
+  
+  fieldset {
+    border: 0px;
+  }
+  
+  h1#title {
+    text-align: center;
+    color: #0173a0;
+    padding: 3%;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input:nth-child(-n + 8) { 
+    width: 95%;
+  }
+  
+  select#register-select {
+    width: 97%;
+  }
+  
+  textarea#q2 {
+    width: 95%;
+    height: 120px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  input[type=button], [type=reset] {
+    width: 47%;
+    padding: 2% 19%;
+    cursor: pointer;
+  }
+  
+  input[type=button] {
+    background-color: #0173a0;
+    color: white;
+    border: 1px solid black;
+  }
+  
+  input[type=button]:hover {
+    background-color: white;
+    color: #0173a0;
+  }
+  
+  input#reset {
+    background-color: white;
+    color: #0173a0;
+    border: 1px solid black;
+  }
+  
+  input#reset:hover {
+    background-color: #0173a0;
+    color: white;
+  }

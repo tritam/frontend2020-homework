@@ -9,7 +9,41 @@
   </head>
   <body>
     <!-- Step 1 - Insert your previous form here -->
+    <div>
+      <h1 id="title">INTRO SURVEY</h1>
+      <form action="/submit" method="post">
+        <fieldset>
+          <label for="name">Name <span style="color: gray">(required)</span></label><br/>
+          <input id="name" name="name" required/><br/><br/>
+          <label for="email">Email <span style="color: gray">(required)</span></label><br/>
+          <input id="email" name="email" type="email" required/><br/><br/>
+
+          <label for="register">Registration Status:</label><br/>
+          <select name="register" id="register-select">
+            <option value="registered">Registered</option>
+            <option value="waitlist">Waitlist</option>
+            <option value="other">Other</option>
+          </select><br/><br/>
+
+          <label for="section">Class Section:</label><br/>
+          <input id="section" name="section" type="radio" value="undergrad" /> CS 410P
+          <input id="section" name="section" type="radio" value="grad" /> CS 510 <br/><br/>
+
+          <label for="q1">Have you taken any of the following courses?</label><br/>
+          <input name="q1" type="checkbox" value="programming languages"/> Programming Languages<br/>
+          <input name="q1" type="checkbox" value="operating systems"/> Operating Systems<br/>
+          <input name="q1" type="checkbox" value="fullstack web dev"/> Full Stack Web Development<br/><br/>
+
+          <label for="q2">Anything else?</label><br/>
+          <textarea id="q2" name="q2" rows="10" cols="70"></textarea>
+          <br/><br/>
+          <input type="button" id="submit" name="submit" value="Submit"/>
+          <input type="reset" id="reset" name="reset" value="Reset"/><br/><br/>
+        </fieldset>
+      </form>
+    </div>
     <!-- Step 2 - Address any responsiveness and/or accessibility issues -->
+
     <script src="01-form.js"></script>
   </body>
 </html>
