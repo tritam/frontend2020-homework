@@ -22,3 +22,24 @@ console.log('Enter your code here');
 // name: r2d2
 // email: r2d2@me.com
 // human: no
+
+document.querySelector('.mx-auto').addEventListener('submit', handleClick); 
+
+//I couldn't figure this one out
+function handleClick(event) {
+    var url = document.getElementById('comments').value;
+
+    var parser = document.createElement('a'),
+        searchObject = {},
+        queries, split, i;
+
+    parser.href = url;
+
+    queries = parser.search.replace(/^\?/, '').split('&');
+    
+    /*let output =  document.querySelector('#output');
+
+    output.innerHTML = userInput.value;*/
+
+    event.preventDefault();
+};
